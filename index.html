@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Pizzeria</title>
+</head>
+
+<body>
+    <div class="container-fluid " id="logansNavbar">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" id="logansLogo" href="#">
+                    <img src="./assets/img/logo.jpeg" alt="logo pizzeria" class="img-fluid logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#ofertas">Ofertas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ordenar">Ordenar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+
+        <div id="header">
+            <div class="container">            
+                <h1 id="title">Bienvenidos a Pizzeria</h1>
+                <h2>Las mejores pizzas</h2>
+                <button class="btn btn-primary">Pedir pizza</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <section id="menu">
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col">
+                        <h2>Menu</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="card pizza-card" data-ingredientes="carne,mozzarella,cebolla">
+                            <img src="./assets/img/Pizza-napolitana.jpg"
+                                class="card-img-top" alt="Pizza Napolitana">
+                            <div class="card-body">
+                                <p class="card-text">Pizza Napolitana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="card pizza-card" data-ingredientes="pollo,tocino,champiñon">
+                            <img src="./assets/img/margarita.jpeg"
+                                class="card-img-top" alt="Pizza Margherita">
+                            <div class="card-body">
+                                <p class="card-text">Pizza Margherita</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="card pizza-card" data-ingredientes="pepperoni,mozzarella,pimenton">
+                            <img src="./assets/img/pepperoni.jpeg"
+                                class="card-img-top" alt="Pizza Pepperoni">
+                            <div class="card-body">
+                                <p class="card-text">Pizza Pepperoni</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="card pizza-card" data-ingredientes="mozzarella,tomate,albahaca">
+                            <img src="./assets/img/quesos.jpg"
+                                class="card-img-top" alt="Pizza Cuatro Quesos">
+                            <div class="card-body">
+                                <p class="card-text">Pizza Cuatro Quesos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="card pizza-card" data-ingredientes="jamón,aceitunas,albahaca">
+                            <img src="./assets/img/hawaiana.jpeg"
+                                class="card-img-top" alt="Pizza Hawaiana">
+                            <div class="card-body">
+                                <p class="card-text">Pizza Hawaiana</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="card pizza-card" data-ingredientes="chorizo,carne,mozzarella">
+                            <img src="./assets/img/meat.jpg"
+                                class="card-img-top" alt="Pizza Meat Lover's">
+                            <div class="card-body">
+                                <p class="card-text">Pizza Meat Lover's</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="card pizza-card" data-ingredientes="pimiento,champiñon,tocino">
+                            <img src="./assets/img/vegetariana.jpeg"
+                                class="card-img-top" alt="Pizza Vegetariana">
+                            <div class="card-body">
+                                <p class="card-text">Pizza Vegetariana</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3 p-2">
+                        <div class="card pizza-card" data-ingredientes="pollo,pimenton,cebolla">
+                            <img src="./assets/img/BBQ.jpg"
+                                class="card-img-top" alt="Pizza BBQ">
+                            <div class="card-body">
+                                <p class="card-text">Pizza BBQ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="ordenar">
+            <div class="container">
+
+
+                <div class="row">
+                    <div class="col">
+                        <div id="cajaOrden">
+                            <div class="row">
+                                <div class="col">
+                                    <h2 class="text-center">Ordena tu Pizza</h2>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-md-6 mb-2">
+                                    <!--CREAR LA PIZZA-->
+                                    <h3 class="text-center">Mejora tu pizza</h3>
+                                    <hr>
+                                    <p>Puede elegir 3 ingredientes gratis. Cada ingrediente adicional cuesta
+                                        $800 pesos cada uno.
+                                    </p>
+                                    <p>Ingredientes disponibles para agregar a su pizza:</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="carne" id="carne">
+                                        <label class="form-check-label" for="carne">
+                                            Carne
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="pollo" id="pollo">
+                                        <label class="form-check-label" for="pollo">
+                                            Pollo
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="tocino" id="tocino">
+                                        <label class="form-check-label" for="tocino">
+                                            Tocino
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="mozzarella"
+                                            id="mozzarella">
+                                        <label class="form-check-label" for="mozzarella">
+                                            Mozzarella
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="champiñon"
+                                            id="champiñon">
+                                        <label class="form-check-label" for="champiñon">
+                                            Champiñon
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="cebolla" id="cebolla">
+                                        <label class="form-check-label" for="cebolla">
+                                            Cebolla
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="piña" id="piña">
+                                        <label class="form-check-label" for="piña">
+                                            Piña
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="pimenton" id="pimenton">
+                                        <label class="form-check-label" for="pimenton">
+                                            Pimenton
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="jamón" id="jamón">
+                                        <label class="form-check-label" for="jamón">
+                                            Jamón
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="aceitunas"
+                                            id="aceitunas">
+                                        <label class="form-check-label" for="aceitunas">
+                                            Aceitunas
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="albahaca" id="albahaca">
+                                        <label class="form-check-label" for="albahaca">
+                                            Albahaca
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="pimiento" id="pimiento">
+                                        <label class="form-check-label" for="pimiento">
+                                            Pimiento
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="espinacas"
+                                            id="espinacas">
+                                        <label class="form-check-label" for="espinacas">
+                                            Espinacas
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="berenjena"
+                                            id="berenjena">
+                                        <label class="form-check-label" for="berenjena">
+                                            Berenjena
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="queso_feta"
+                                            id="queso_feta">
+                                        <label class="form-check-label" for="queso_feta">
+                                            Queso Feta
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="chorizo" id="chorizo">
+                                        <label class="form-check-label" for="chorizo">
+                                            Chorizo
+                                        </label>
+                                    </div>
+
+                                    <p>Los ingredientes seleccionados son: <span id="ingredientes-seleccionados"></span>
+                                    </p>
+                                    <p>Los ingredientes <b>extras</b> seleccionados son: <span
+                                            id="ingredientes-extras"></span></p>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <!-- LA ORDEN-->
+                                    <h3 class="text-center">Resumen del pedido</h3>
+                                    <hr>
+                                    <div id="resumen-pedido"></div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <input type="number" class="form-control" name="propina" id="propina"
+                                                placeholder="Ingrese Propina">
+                                        </div>
+                                        <div class="col-6">
+                                            <button type="button" class="btn btn-dark" onclick="enviarPedido()">Enviar
+                                                pedido con
+                                                propina</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        team 2 @ 2024
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

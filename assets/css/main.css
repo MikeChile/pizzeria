@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin:0;
+}
+
+.logo{
+    max-width: 100px;
+}
+
+.navbar{
+background-color: #e3dcccef;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#header #title{
+    margin-top:200px;
+    color: white;
+}
+
+#header::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://cdn.pixabay.com/photo/2020/04/29/03/40/pizza-5107054_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    z-index:-1;
+}
+
+#ordenar{
+    background-image: url(https://previews.123rf.com/images/kovalnadiya/kovalnadiya2212/kovalnadiya221201508/196727039-establecer-fondo-de-pizza-varios-tipos-de-pizza-italiana-almuerzo-de-comida-r%C3%A1pida-vista.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#cajaOrden{
+    background-color: white;
+    margin:20px;
+    padding: 20px;
+}
+
+.card-img, .card-img-top{
+ height: 175px;
+}
+
+.footer{
+    width:100%;
+    padding:20px;
+    background-color: #333;
+    color: rgb(226, 226, 226);
+    text-align: center;
+    margin-top:20px;
+}
